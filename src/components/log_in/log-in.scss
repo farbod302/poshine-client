@@ -1,0 +1,107 @@
+.log-in-container {
+    background: rgb(0, 15, 39);
+    background: linear-gradient(142deg, rgba(0, 15, 39, 1) 31%, rgba(0, 9, 24, 1) 92%);
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    .log-in {
+        height: 90vh;
+        background-image: url("../../public/images/bg.png");
+        background-size: 120% 100%;
+        box-shadow: #003b77 0px 8px 28px, #003b77 0px 10px 10px;
+        .form {
+            overflow: auto;
+            width: 550px;
+            background-color: #000918;
+            height: 100%;
+            display: grid;
+            color: white;
+            align-items: center;
+            .title {
+                text-align: center;
+                padding: 1rem;
+                font-size: 2rem;
+            }
+            form {
+                width: 80%;
+                margin: auto;
+                display: grid;
+                .select,
+                .input {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    column-gap: 1rem;
+                    border: 1px solid #003b77;
+                    border-radius: 0.3rem;
+                    margin: 1.5rem 0;
+                    padding: 0 1rem;
+                    i {
+                        font-size: 1.3rem;
+                    }
+                    select,
+                    input {
+                    padding: 1rem;
+
+                        font-size: 1.2rem;
+                        width: 100%;
+                        background: none;
+                        border: none;
+                        color: white;
+                        &:focus {
+                            outline: none;
+                        }
+                        option {
+                            color: black;
+                        }
+                        &::placeholder {
+                            /* Chrome, Firefox, Opera, Safari 10.1+ */
+                            color: white;
+                            opacity: 1; /* Firefox */
+                        }
+
+                        &:-ms-input-placeholder {
+                            /* Internet Explorer 10-11 */
+                            color: white;
+                        }
+
+                        &::-ms-input-placeholder {
+                            /* Microsoft Edge */
+                            color: white;
+                        }
+                    }
+                }
+                .button {
+                    text-align: center;
+                    display: grid;
+                    place-items: center;
+                    margin: 3rem 0;
+                    button {
+                        width: 10rem;
+                        text-align: center;
+                        background-color: #003B77;
+                        padding:0.8rem 0;
+                        border-radius: 1.5rem;
+                        font-size: 1.3rem;
+                        cursor: pointer;
+                        transition: 0.3s;
+                        &:hover{
+                            transform: scale(1.1,1.1);
+                        }
+                        color: white;
+                        border: none;
+                    }
+                }
+                .forget-password{
+                    text-align: center;
+                    color: #0a778a;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                }
+            }
+            @media(max-width: 600px){
+                width: 100%;
+            }
+        }
+    }
+}
