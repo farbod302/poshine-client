@@ -1,0 +1,53 @@
+.lab-form-1 {
+    height: 100%;
+
+    .content {
+        height: 90%;
+        .ltr-form {
+            min-height: 25rem;
+            width: 90%;
+            margin: 1rem auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 8rem;
+            column-gap: 1rem;
+            .row {
+                display: grid;
+                height: 100%;
+                align-items: center;
+                .input {
+                    display: grid;
+                    grid-template-columns: 7rem 1fr 5rem;
+                    column-gap: 0.5rem;
+                    align-items: center;
+                    .label {
+                        font-size: 0.8rem;
+                    }
+                    input {
+                        padding: 0.3rem;
+                    }
+                }
+            }
+            .row-2 {
+                .content {
+                    height: 100%;
+                    display: grid;
+                    grid-template-rows: 2rem 1fr;
+                    .sub-title{
+                        background-color: gray;
+                        color: white;
+                        padding: 0.5rem;
+                    }
+                    .withe-space{
+                        border: 1px solid gray;
+                    }
+
+                }
+            }
+            .btns{
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}

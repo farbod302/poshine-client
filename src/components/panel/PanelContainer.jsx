@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LabForm1 from './forms/lab_form_1/LabForm1';
 import Users from './forms/users/Users';
 import Welcome from './forms/welcome/Welcome';
 import "./panel-container.scss"
@@ -14,6 +15,7 @@ const PanelContainer = () => {
         switch(form){
             case("welcome"):{return <Welcome/>}
             case("add_edit_user"):{return <Users/>}
+            case("lab_form_1"):{return <LabForm1/>}
 
             default:{return <Welcome/>}
         }
