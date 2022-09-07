@@ -11,23 +11,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 8rem;
             column-gap: 1rem;
-            .row {
-                display: grid;
-                height: 100%;
-                align-items: center;
-                .input {
-                    display: grid;
-                    grid-template-columns: 7rem 1fr 5rem;
-                    column-gap: 0.5rem;
-                    align-items: center;
-                    .label {
-                        font-size: 0.8rem;
-                    }
-                    input {
-                        padding: 0.3rem;
-                    }
-                }
-            }
+           
             .row-2 {
                 .content {
                     height: 100%;
@@ -48,6 +32,24 @@
                 width: 90%;
                 margin: auto;
             }
+        }
+    }
+}
+
+.row {
+    display: grid;
+    height: 100%;
+    align-items: center;
+    .input {
+        display: grid;
+        grid-template-columns: 7rem 1fr 5rem;
+        column-gap: 0.5rem;
+        align-items: center;
+        .label {
+            font-size: 0.8rem;
+        }
+        input {
+            padding: 0.3rem;
         }
     }
 }

@@ -1,0 +1,61 @@
+.lab-form-2{
+    height: 100%;
+    .content{
+        height: 100%;
+        .form_2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 1rem;
+            
+        }
+        .row-1{
+            .input{
+                grid-template-columns: 15rem 1fr 4rem;
+                margin-bottom: 0.5rem;
+            }
+            .check-box-groupe{
+                border: 1px solid gray;
+                margin-left: 0.2rem;
+                margin-bottom: 1rem;
+                .label-check{
+                    width: max-content;
+                    transform: translate(1rem,-0.4rem);
+                    background-color: #fff;
+                }
+                .check-boxs{
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+        .row-2{
+            height: 100%;
+            display: grid;
+            grid-template-rows: 1fr 1.5fr;
+            .note{
+                height: 100%;
+                textarea{
+                    width: 98%;
+                    height: 80%;
+                    background-color: #fff;
+                    resize: none;
+                    margin-top: 0.5rem;
+                }
+            }
+            .btns{
+                .input{
+                    margin-top: 0.5rem;
+                }
+                .btns-container{
+                    width: 90%;
+                    margin: 2rem auto;
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr );
+                    justify-content: center;
+                    grid-gap: 1rem;
+                }
+            }
+        }
+    }
+}
