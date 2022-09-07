@@ -1,5 +1,5 @@
 import React from 'react';
-import { input_picker, notif, redirect, server_req } from '../../container/helper';
+import { input_picker, notif, redirect, server_req_post } from '../../container/helper';
 
 
 import "./log-in.scss"
@@ -11,10 +11,10 @@ const LogIn = () => {
         e.preventDefault()
         let userName = input_picker("user-name")
         let password = input_picker("password")
-        const data =await server_req("/registion/log_in", "post", { userName, password })
+        const data =await server_req_post("/registion/log_in", { userName, password })
         notif(data.status,data.msg)
-        if(data.data.token){
-            localStorage.setItem("token",data.data.token)
+        if(data.data?.token){
+            localStorage.setItem("token",data.data?.token)
             redirect("/panel")
         }
 

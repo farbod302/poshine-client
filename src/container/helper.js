@@ -12,8 +12,8 @@ export const notif = (status, msg) => {
 }
 
 
-export const server_req = async (path, method, payload) => {
-    const { data } = await axios[method](
+export const server_req_post = async (path, payload) => {
+    const { data } = await axios["post"](
         `${server}${path}`
         , payload,
         {
@@ -22,6 +22,18 @@ export const server_req = async (path, method, payload) => {
     )
     return data
 }
+
+
+export const server_req_get = async (path) => {
+    const { data } = await axios["get"](
+        `${server}${path}`,
+        {
+            headers: { token: localStorage.getItem("token") || "" }
+        }
+    )
+    return data
+}
+
 
 
 export const redirect = (path) => {

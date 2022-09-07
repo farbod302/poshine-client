@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { redirect } from '../../../container/helper';
 import { handel_user_nav } from './nav_filds';
 import "./panel-nav.scss"
 
-const PanelNav = ({selectForm}) => {
+const PanelNav = ({ selectForm }) => {
 
     const [list, setList] = useState([])
     const [toggle, setToggle] = useState(true)
@@ -24,6 +25,7 @@ const PanelNav = ({selectForm}) => {
 
 
     useEffect(() => {
+        if(!localStorage.getItem("token")){return redirect("/")}
         let fetch = async () => {
             let list = await handel_user_nav()
             setList(list)
@@ -57,7 +59,7 @@ const PanelNav = ({selectForm}) => {
                                 <div className={`drop-down `}>
                                     <div className="drop-content">
                                         {l.filds.map(sl =>
-                                            <div className="e-drop-down" onClick={()=>{selectForm(sl.id);toggle_nav()}}>
+                                            <div className="e-drop-down" onClick={() => { selectForm(sl.id); }}>
                                                 <i className={`fas fa-${sl.icon}`}></i>
                                                 <div>{sl.label}</div>
                                             </div>

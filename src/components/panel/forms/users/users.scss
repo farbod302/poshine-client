@@ -1,0 +1,70 @@
+.tabel-container {
+    height: 85%;
+    .tabel {
+        width: 100%;
+        tr {
+            border: 1px solid gray;
+        }
+        td {
+            padding: 0.5rem 0;
+            border-left: 1px solid gray;
+            text-align: center;
+        }
+    }
+}
+
+.acc {
+    width: 90%;
+    margin:2rem auto;
+    border-top: 1px solid gray;
+    .sub-title{
+        font-size: 1.3rem;
+        padding-top: 0.5rem;
+        color: #006777;
+    }
+
+    .acc-and-pick{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid gray;
+        margin-top: 1rem;
+        .title{
+            text-align: center;
+            color: #006777;
+            border-bottom: 1px solid gray;
+            padding-bottom: 0.5rem;
+        }
+        .pick{
+            padding: 0.5rem;
+            border-right:1px solid gray ;
+        }
+        .e-access,.pick{
+            padding: 0.5rem;
+            ul{
+               li{
+                   float: right;
+                   margin:0.5rem 0.5rem;
+                   padding: 0.5rem;
+                   background-color: rgba(238, 238, 238, 0.719);
+                   border-radius: 0.3rem;
+                   cursor: pointer;
+               }
+            }
+            
+        }
+    }
+}
+.submit{
+    text-align: center;
+    margin: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    div{
+        width: 10rem;
+        background-color: #006777;
+        padding: 1rem;
+        color: white;
+        border-radius: 0.3rem;
+    }
+}

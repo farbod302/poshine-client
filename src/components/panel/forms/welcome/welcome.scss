@@ -1,0 +1,20 @@
+.welcome-container {
+    display: grid;
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    background-image: url("../../../../public/images/welcome.jpg");
+    background-size: 100% 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .title{
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 2rem;
+        color: #006777;
+        .sub-title{
+            font-size: 1.3rem;
+            color: gray;
+            line-height: 5rem;
+        }
+    }
+}

@@ -1,7 +1,7 @@
-import { redirect, server_req } from "../../../container/helper"
+import { redirect, server_req_get } from "../../../container/helper"
 
 export const handel_user_nav = async () => {
-    let data = await server_req("/user/user_forms", "post", {})
+    let data = await server_req_get("/user/user_forms")
     const { forms_list } = data.data
     let final_list = []
     forms_list.forEach(e => {
